@@ -1,0 +1,91 @@
+[0m[1mdata.docker_image.daymark: Reading...[0m[0m
+[0m[1mdata.docker_image.daymark: Read complete after 0s [id=sha256:6d761904f75f74e2a6c1ad9b1ed07d7c3b698a3512395e71ee924d0e33d924bf][0m
+[0m[1mdocker_container.daymark: Refreshing state... [id=e2332ba4603ad33ecb6a585a0cfb8fb09b05a18ca5d399d167a1d479de72e04f][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [31m-[0m destroy[0m
+
+Terraform will perform the following actions:
+
+[1m  # docker_container.daymark[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "docker_container" "daymark" {
+      [31m-[0m[0m attach                                      = false [90m-> null[0m[0m
+      [31m-[0m[0m command                                     = [
+          [31m-[0m[0m "bun",
+          [31m-[0m[0m "run",
+          [31m-[0m[0m "src/index.ts",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m container_read_refresh_timeout_milliseconds = 15000 [90m-> null[0m[0m
+      [31m-[0m[0m cpu_shares                                  = 0 [90m-> null[0m[0m
+      [31m-[0m[0m device_cgroup_rules                         = [] [90m-> null[0m[0m
+      [31m-[0m[0m dns                                         = [] [90m-> null[0m[0m
+      [31m-[0m[0m dns_opts                                    = [] [90m-> null[0m[0m
+      [31m-[0m[0m dns_search                                  = [] [90m-> null[0m[0m
+      [31m-[0m[0m entrypoint                                  = [
+          [31m-[0m[0m "/usr/local/bin/docker-entrypoint.sh",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m env                                         = [] [90m-> null[0m[0m
+      [31m-[0m[0m group_add                                   = [] [90m-> null[0m[0m
+      [31m-[0m[0m hostname                                    = "e2332ba4603a" [90m-> null[0m[0m
+      [31m-[0m[0m id                                          = "e2332ba4603ad33ecb6a585a0cfb8fb09b05a18ca5d399d167a1d479de72e04f" [90m-> null[0m[0m
+      [31m-[0m[0m image                                       = "sha256:6d761904f75f74e2a6c1ad9b1ed07d7c3b698a3512395e71ee924d0e33d924bf" [90m-> null[0m[0m
+      [31m-[0m[0m init                                        = false [90m-> null[0m[0m
+      [31m-[0m[0m ipc_mode                                    = "private" [90m-> null[0m[0m
+      [31m-[0m[0m log_driver                                  = "local" [90m-> null[0m[0m
+      [31m-[0m[0m log_opts                                    = {} [90m-> null[0m[0m
+      [31m-[0m[0m logs                                        = false [90m-> null[0m[0m
+      [31m-[0m[0m max_retry_count                             = 0 [90m-> null[0m[0m
+      [31m-[0m[0m memory                                      = 0 [90m-> null[0m[0m
+      [31m-[0m[0m memory_reservation                          = 0 [90m-> null[0m[0m
+      [31m-[0m[0m memory_swap                                 = 0 [90m-> null[0m[0m
+      [31m-[0m[0m must_run                                    = true [90m-> null[0m[0m
+      [31m-[0m[0m name                                        = "terraform-task3-daymark" [90m-> null[0m[0m
+      [31m-[0m[0m network_data                                = [
+          [31m-[0m[0m {
+              [31m-[0m[0m gateway                   = "172.17.0.1"
+              [31m-[0m[0m global_ipv6_prefix_length = 0
+              [31m-[0m[0m ip_address                = "172.17.0.2"
+              [31m-[0m[0m ip_prefix_length          = 16
+              [31m-[0m[0m mac_address               = "5e:47:b8:2e:a6:77"
+              [31m-[0m[0m network_name              = "bridge"
+                [90m# (2 unchanged attributes hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m network_mode                                = "bridge" [90m-> null[0m[0m
+      [31m-[0m[0m platform                                    = "linux" [90m-> null[0m[0m
+      [31m-[0m[0m privileged                                  = false [90m-> null[0m[0m
+      [31m-[0m[0m publish_all_ports                           = false [90m-> null[0m[0m
+      [31m-[0m[0m read_only                                   = false [90m-> null[0m[0m
+      [31m-[0m[0m remove_volumes                              = true [90m-> null[0m[0m
+      [31m-[0m[0m restart                                     = "no" [90m-> null[0m[0m
+      [31m-[0m[0m rm                                          = false [90m-> null[0m[0m
+      [31m-[0m[0m runtime                                     = "runc" [90m-> null[0m[0m
+      [31m-[0m[0m security_opts                               = [] [90m-> null[0m[0m
+      [31m-[0m[0m shm_size                                    = 64 [90m-> null[0m[0m
+      [31m-[0m[0m start                                       = true [90m-> null[0m[0m
+      [31m-[0m[0m stdin_open                                  = false [90m-> null[0m[0m
+      [31m-[0m[0m stop_timeout                                = 0 [90m-> null[0m[0m
+      [31m-[0m[0m storage_opts                                = {} [90m-> null[0m[0m
+      [31m-[0m[0m sysctls                                     = {} [90m-> null[0m[0m
+      [31m-[0m[0m tmpfs                                       = {} [90m-> null[0m[0m
+      [31m-[0m[0m tty                                         = false [90m-> null[0m[0m
+      [31m-[0m[0m user                                        = "bun" [90m-> null[0m[0m
+      [31m-[0m[0m wait                                        = false [90m-> null[0m[0m
+      [31m-[0m[0m wait_timeout                                = 60 [90m-> null[0m[0m
+      [31m-[0m[0m working_dir                                 = "/app" [90m-> null[0m[0m
+        [90m# (5 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m ports {
+          [31m-[0m[0m external = 18080 [90m-> null[0m[0m
+          [31m-[0m[0m internal = 3000 [90m-> null[0m[0m
+          [31m-[0m[0m ip       = "0.0.0.0" [90m-> null[0m[0m
+          [31m-[0m[0m protocol = "tcp" [90m-> null[0m[0m
+        }
+    }
+
+[1mPlan:[0m [0m0 to add, 0 to change, 1 to destroy.
+[0m[1mdocker_container.daymark: Destroying... [id=e2332ba4603ad33ecb6a585a0cfb8fb09b05a18ca5d399d167a1d479de72e04f][0m[0m
+[0m[1mdocker_container.daymark: Destruction complete after 0s[0m
+[0m[1m[32m
+Destroy complete! Resources: 1 destroyed.[0m

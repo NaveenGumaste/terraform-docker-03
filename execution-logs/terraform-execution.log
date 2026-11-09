@@ -1,0 +1,54 @@
+**********************
+PowerShell transcript start
+Start time: 20261109172805
+Username: ZOD\ZOD
+RunAs User: ZOD\ZOD
+Configuration Name: 
+Machine: ZOD (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -noexit -command try { . "c:\Users\navee\AppData\Local\Programs\Microsoft VS Code\c4453f8ea4\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 29796
+PSVersion: 7.6.9
+PSEdition: Core
+GitCommitId: 7.6.9
+OS: Microsoft Windows 10.0.26300
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is .\execution-logs\terraform-execution.log
+]633;D;0]633;A]633;P;Cwd=E:\x5cdevops\x5celevate\x5cterraform-docker-03PS E:\devops\elevate\terraform-docker-03> ]633;B
+PS>terraform -chdir=terraform init
+so that Terraform can guarantee to make the same selections by default when
+you run "terraform init" in the future.
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+]633;D;0]633;A]633;P;Cwd=E:\x5cdevops\x5celevate\x5cterraform-docker-03PS E:\devops\elevate\terraform-docker-03> ]633;B
+PS>terraform -chdir=terraform plan
+
+]633;D;0]633;A]633;P;Cwd=E:\x5cdevops\x5celevate\x5cterraform-docker-03PS E:\devops\elevate\terraform-docker-03> ]633;B
+PS>terraform -chdir=terraform plan -out=tfplan
+
+]633;D;0]633;A]633;P;Cwd=E:\x5cdevops\x5celevate\x5cterraform-docker-03PS E:\devops\elevate\terraform-docker-03> ]633;B
+PS>terraform -chdir=terraform apply tfplan 2>&1 | Tee-Object -FilePath .\execution-logs\terraform-apply.txt
+docker_image.nginx: Creating...
+docker_image.nginx: Creation complete after 6s [id=sha256:713fc2ebfd92e8217db451477182ee91944b123d2b1ee9fd5a8c6e91ca6c3a11nginx:alpine]
+docker_container.nginx: Creating...
+Γò╖
+Γöé Error: Unable to start container: Error response from daemon: ports are not available: exposing port TCP 0.0.0.0:8080 -> 127.0.0.1:0: listen tcp4 0.0.0.0:8080: bind: An attempt was made to access a socket in a way forbidden by its access permissions.
+Γöé 
+Γöé   with docker_container.nginx,
+Γöé   on main.tf line 19, in resource "docker_container" "nginx":
+Γöé   19: resource "docker_container" "nginx" {
+Γöé 
+Γò╡
+]633;D;1]633;A]633;P;Cwd=E:\x5cdevops\x5celevate\x5cterraform-docker-03PS E:\devops\elevate\terraform-docker-03> ]633;B

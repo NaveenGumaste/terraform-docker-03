@@ -1,0 +1,11 @@
+[0m[1mdocker_image.nginx: Creating...[0m[0m
+[0m[1mdocker_image.nginx: Creation complete after 6s [id=sha256:713fc2ebfd92e8217db451477182ee91944b123d2b1ee9fd5a8c6e91ca6c3a11nginx:alpine][0m
+[0m[1mdocker_container.nginx: Creating...[0m[0m
+Γò╖
+Γöé Error: Unable to start container: Error response from daemon: ports are not available: exposing port TCP 0.0.0.0:8080 -> 127.0.0.1:0: listen tcp4 0.0.0.0:8080: bind: An attempt was made to access a socket in a way forbidden by its access permissions.
+Γöé 
+Γöé   with docker_container.nginx,
+Γöé   on main.tf line 19, in resource "docker_container" "nginx":
+Γöé   19: resource "docker_container" "nginx" {
+Γöé 
+Γò╡

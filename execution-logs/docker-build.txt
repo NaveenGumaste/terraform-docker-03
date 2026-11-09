@@ -1,0 +1,48 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 425B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/oven/bun:1
+#2 DONE 1.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 139B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 252B done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/oven/bun:1@sha256:1d22548f177f4ff38e0c15baa3c2c46c6c2060ba2d1bc573bb4720b407548f1d
+#5 resolve docker.io/oven/bun:1@sha256:1d22548f177f4ff38e0c15baa3c2c46c6c2060ba2d1bc573bb4720b407548f1d 0.0s done
+#5 DONE 0.0s
+
+#6 [3/6] COPY package.json bun.lock ./
+#6 CACHED
+
+#7 [4/6] RUN bun install --frozen-lockfile --production
+#7 CACHED
+
+#8 [2/6] WORKDIR /app
+#8 CACHED
+
+#9 [5/6] COPY --chown=bun:bun src ./src
+#9 CACHED
+
+#10 [6/6] COPY --chown=bun:bun public ./public
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 exporting manifest sha256:edff0620b4d94965380a8a9075079cb995649560dbe94671fd52578cb093276d done
+#11 exporting config sha256:f623e5484df4db47ef33bb63dcc12a34818d9f7009b1bb63af7886a7c0171226 done
+#11 exporting attestation manifest sha256:f4a01a3ba37c1f85ab98217cbcde0668c1079993b3e3794b7589e12bc4f830de 0.0s done
+#11 exporting manifest list sha256:6d761904f75f74e2a6c1ad9b1ed07d7c3b698a3512395e71ee924d0e33d924bf 0.0s done
+#11 naming to docker.io/library/daymark-todo:local done
+#11 unpacking to docker.io/library/daymark-todo:local
+#11 unpacking to docker.io/library/daymark-todo:local done
+#11 DONE 0.1s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/tfiykm64yss0au8h2u1ln8bgk
