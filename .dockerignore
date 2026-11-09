@@ -1,0 +1,10 @@
+node_modules
+.git
+.github
+.env
+.env.\*
+\*.log
+tests
+README.md
+terraform/
+execution-logs/
