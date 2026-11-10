@@ -1,6 +1,6 @@
 # Daymark Todo
 
-A small vanilla JavaScript todo tracker served by Bun. Add, edit, complete, delete, search, and filter tasks. Your list is saved in this browser with `localStorage`.
+A simple vanilla JavaScript todo app served by Bun. Add, view, edit, complete, and delete tasks. Your list is saved in this browser with `localStorage`.
 
 ## Run locally
 
@@ -23,6 +23,10 @@ Tasks stay in the browser profile where they were created; the server does not s
 ## Frontend
 
 The frontend UI was made using Codex with vanilla HTML, CSS, and JavaScript.
+
+## Git workflow
+
+Work on feature branches from `dev`, merge changes into `dev` with a pull request, and promote releases from `dev` to `main` with a pull request. See [the Git workflow guide](docs/git-workflow.md).
 
 ## Terraform Docker task
 
